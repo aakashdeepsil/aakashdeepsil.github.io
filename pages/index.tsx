@@ -41,7 +41,7 @@ const Home = (): JSX.Element => (
             I&apos;m a Software Engineer with expertise in Cloud, DevOps, SRE, and Software Development
           </Text>
         </Container>
-        <Link href="/about">
+        <Link href="/portfolio/about">
           <Button>More about me &rarr;</Button>
         </Link>
       </Container>

@@ -11,7 +11,7 @@ const states: { [key: string]: React.CSSProperties } = {
     left: '6px',
     width: '61px',
   },
-  '/about': {
+  '/portfolio/about': {
     left: '81px',
     width: '65px',
   },
@@ -50,8 +50,8 @@ export interface NavProps {
 const Links = (): JSX.Element => (
   <>
     <NavLink href="/">Home</NavLink>
-    <NavLink href="/about">About</NavLink>
-    <NavLink href="/projects">Projects</NavLink>
+    <NavLink href="/portfolio/about">About</NavLink>
+    <NavLink href="/portfolio/projects">Projects</NavLink>
   </>
 );
 
