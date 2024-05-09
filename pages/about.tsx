@@ -30,10 +30,6 @@ interface AboutProps {
 
 const stacks = [
   {
-    Icon: SiGo,
-    url: 'https://golang.org/',
-  },
-  {
     Icon: SiPython,
     url: 'https://www.python.org/',
   },
