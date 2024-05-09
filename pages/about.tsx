@@ -152,7 +152,7 @@ const About = ({ experiences }: AboutProps): JSX.Element => (
       </Title>
       <Container width="100%">
         {experiences.map(({ data }, i) => (
-          <TransparentLink href={`/portfolio/about/${data.slug}`} key={data.slug}>
+          <TransparentLink href={`/about/${data.slug}`} key={data.slug}>
             <Grid
               key={i}
               gridTemplateColumns="1fr 4fr"
