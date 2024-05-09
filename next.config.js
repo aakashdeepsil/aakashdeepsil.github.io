@@ -1,21 +1,9 @@
-// @ts-check
+// next.config.js
+const isProd = process.env.NODE_ENV === 'production'
 
-/**
- * @type {import('next').NextConfig}
- **/
 module.exports = {
+  assetPrefix: isProd ? '/portfolio/' : '',
   images: {
-    domains: ['rdl.ink'],
+    unoptimized: true,
   },
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.resolve.fallback.fs = false;
-    }
-    config.module.rules.push({
-      test: /\.md|\.mdx|\.webp$/,
-      use: 'raw-loader',
-    });
-
-    return config;
-  },
-};
+}
