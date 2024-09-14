@@ -102,13 +102,12 @@ const About = ({ experiences }: AboutProps): JSX.Element => (
     </Head>
     <Container alignContent="center" alignItems="center">
       <Title fontSize={['3rem', '4rem']} as="h2">
-        Software Engineer
+        Aakashdeep Sil
       </Title>
       <Container maxWidth={['100%', '720px']} marginY="2rem">
-        <Text>I&apos;m a graduate student living in the US. I&apos;m pursuing Master of Science in Computer Science at Texas A&M University.</Text>
+        <Text>I&apos;m a graduate student in the US. I&apos;m pursuing Master of Science in Computer Science at Texas A&M University.</Text>
         <Text>
-          During my free time I like going gym, watch movies, play video games, and travel. I also
-          try to cook new dishes.
+          During my free time I like to watch movies, play video games, and travel. I&apos;m also a huge fan of Stars Wars.
         </Text>
       </Container>
     </Container>

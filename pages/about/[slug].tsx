@@ -55,7 +55,6 @@ const About: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <Container mt="1rem" gridGap="1rem">
         <Container
           pl="2rem"
-          backgroundColor="rgb(241, 241, 239)"
           borderRadius="3px"
         >
           <Text as="h3" fontWeight="normal">

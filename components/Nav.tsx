@@ -11,7 +11,7 @@ const states: { [key: string]: React.CSSProperties } = {
     left: '6px',
     width: '61px',
   },
-  '/portfolio/about': {
+  '/about': {
     left: '81px',
     width: '65px',
   },
