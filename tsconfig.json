@@ -8,10 +8,11 @@
     "jsx": "preserve",
     "lib": [
       "dom",
-      "es2017"
+      "dom.iterable",
+      "esnext"
     ],
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
@@ -44,13 +45,20 @@
       ]
     },
     "incremental": true,
-    "target": "es5"
+    "target": "es5",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "exclude": [
     "node_modules"
   ],
   "include": [
+    "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    ".next/types/**/*.ts"
   ]
 }

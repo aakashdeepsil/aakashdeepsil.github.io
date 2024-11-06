@@ -3,9 +3,14 @@
 /**
  * @type {import('next').NextConfig}
  **/
-module.exports = {
+const nextConfig = {
   images: {
-    domains: ['rdl.ink'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**', // Replace with your specific domains
+      },
+    ],
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
@@ -19,3 +24,5 @@ module.exports = {
     return config;
   },
 };
+
+module.exports = nextConfig;
